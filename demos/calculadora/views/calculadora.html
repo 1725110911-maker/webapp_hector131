@@ -1,28 +1,38 @@
-$def with (numero_1, numero_2, resultado)
+$def with(numero_1, numero_2, resultado)
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title> Calculadora </title>
+        <title >Calculadora</title>
     </head>
-    <body>
-        <h1> CALCULADORA</h1>
-        <a href="/">Index </a><br>
+    <body text align = "CENTER">
+        <h1 >Calculadora</h1>
 
-        <form method= "POST">
-            <label>Número 1:</label><br>
-            <input type = "number" name= "numero_1" id="numero_1" valve=$numero_1><br>
+        <div text align="CENTER">
+            <a href="/" >Index</a>
+        </div>
+
+        <form method="POST" >
+            <label>Numero 1:</label><br>
+            <input type="number" name="numero_1" id="numero_1" value=$numero_1><br>
             
-            <label>Número 2:</label><br>
-            <input type = "number" name= "numero_2" id="numero_2" valve=$numero_2><br>
+            <label>Numero 2:</label><br>
+            <input type="number" name="numero_2" id="numero_2" value=$numero_2><br>
 
-            <label>Resultado:</label><br>
-            <input type = "number" name= "resultado" id="resultado" valve=$resultado><br>
+            <label>Resultado :</label><br>
+            <input type ="number" name="resultado" id="resultado" value=$resultado><br>
 
-            <button name="operacion" id="operacion" value="sumar">Sumar</button>
-
+            <button name="operacion" id="operacion" value="sumar">Sumar</button><br>
+            <button name="operacion" id="operacion" value="restar">Restar</button><br>
+            <button name="operacion" id="operacion" value="multiplicar">Multiplicar</button><br>
+            <button name="operacion" id="operacion" value="dividir">Dividir</button><br>
+            <button name="operacion" id="operacion" value="modulo">Modulo</button><br>
+            <button name="operacion" id="operacion" value="raiz_cuadrada">Raiz cuadrada</button><br>
+            <button name="operacion" id="operacion" value="potencia">Potencia</button><br>
+            <button name="operacion" id="operacion" value="limpiar">Limpiar</button><br>
         </form>
+
 
     </body>
 </html>
